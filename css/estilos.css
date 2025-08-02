@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.colores {
+    color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 15%);
+    color: hsl(208, 100%, 74%);
+    color: hsl(208, 100%, 94%);
+    color: hsl(286, 100%, 65%);
+    }
+
+*{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: hsl(208, 100%, 94%);
+    color: hsl(208, 100%, 8%);
+    margin: 0;
+    line-height: 1.5;
+
+}
+
+/* ESTILOS PARA EL HEADER */
+header{
+    background-color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 94%);
+    padding: 2rem;
+
+    /* posicion sticky */
+    position: sticky;
+    top: 0;
+}
+
+.contenedor-header{
+    width: min(65rem, 100%);
+    margin: 0rem auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para las secciones */
+
+section{
+    padding: 2rem;
+    border-bottom: 0.1rem solid hsl(208, 100%, 8%);
+    width: min(45rem, 100%);
+    margin: 2rem auto;
+    border: none;
+
+}
+
+section h1{
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+/* estilos para footer */
+
+footer{
+    background-color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 94%);
+    padding: 2rem;
+}
+
+/* ejemplo de modelo de caja */
+
+.modeloDeCaja{
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    width: 12rem;
+    height: 12rem;
+
+    padding: 2rem;
+    margin: 2rem;
+}
+
+/* Ejemplo de trabajo con links y CSS */
+
+a.nav:link,
+a.nav:visited{
+    color: hsl(208, 100%, 94%);
+    text-decoration: none;
+
+    
+    /* display: inline-block;
+    background-color: red;
+    padding: 0.5rem;
+    border-radius: 1rem; */
+}
+
+a.nav:hover,
+a.nav:active{
+    color: hsl(286, 100%, 65%);
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0;
+
+    display: flex;
+    gap: 2rem;
+}
+
+/* imagenes */
+
+img{
+    width: min(65rem, 100%);
+}
+
+/* Clase 3 */
+#bienvenida{
+    min-height: 42rem;
+    padding: 0;
+    background-image: url('../img/bienvenida.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Asi viene de cajon */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#bienvenida h1{
+    background-color: hsla(208, 100%, 8%, 0.75);
+    color: hsl(207, 100%, 94%);
+    font-weight: 500;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+/* flexbox ejemplo */
+
+.contenedor{
+    min-height: 32rem;
+    background-color: hsl(208, 100%, 74%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+}
+
+.item{
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 1rem;
+
+    /* width: 8rem;
+    height: 8rem; */
+    border-radius: 100%;
+}
+
+/* Ejercicio novedades */
+
+#novedades .contenedor-novedades{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+
+}
+
+#novedades article{
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+
+}
+
+#novedades article img{
+    width: 12rem;
+
+}
+
+#novedades h2{
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    
+}
+
+#novedades h3{
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Tarea: hacer los links */
+
+
+
+.contenedor-novedades article a{
+    border: 2px solid hsla(208, 100%, 8%, 0.75);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+/* .contenedor-novedades {
+    display: flex;
+    justify-content:last baseline;
+
+} */
+
+.btn-outline,
+.btn-fill{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-fill{
+    color: hsl(207, 100%, 94%);
+    background-color: hsl(208, 100%, 15%);
+}
+
+.baseline-link{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.baseline-title{
+    width: auto;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}

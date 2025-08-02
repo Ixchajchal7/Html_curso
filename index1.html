@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖥️ Clase 4 - Desarrollo Web con HTML</title>
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/index.css"> 
+</head>
+
+<body>
+ 
+<header>
+    <nav></nav>
+</header>
+
+<section id="bannerPrincipal"></section>
+
+<main>
+    <h1>Temas de la Clase 4</h1>
+
+    <h2>Los formularios en HTML</h2>
+
+    <form action="" method="post" autocomplete="off">
+        <label for="nya">Nombre y Apellido:</label>
+        <input type="text" name="nombres" id="nya" value="Juan Perez" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ]+(?:\s[A-Za-zÁÉÍÓÚáéíóúÑñ]+)+$"> <!-- minlength="2" maxlength="50" -->
+
+        <label for="">Domicilio:</label>
+        <input type="text" name="dom" placeholder="Calle + número + localidad + provincia + C/P">
+
+        <label for="">Edad (18 a 65):</label>
+        <input type="number" name="edad" min="18" max="65">
+
+        <label for="">Teléfono:</label>
+        <input type="tel" name="phone" placeholder="Ejemplo: (011) 4444-1234" maxlength="30">
+
+        <label for="">Contraseña:</label>
+        <input type="password" name="clave" required>
+
+        <label for="vitae">Adjuntá tu C.V:</label>
+        <input type="file" name="cv" id="vitae" required>
+
+        <label for="">Fecha de nacimiento:</label>
+        <input type="date" name="cumple" required>
+
+        <label for="pais">Nacionalidad:</label>
+        <select name="nac" id="pais">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasileña</option>
+            <option value="Colombia">Colombiana</option>
+            <option value="" selected>-Seleccionar-</option>
+        </select>
+
+        <label for="mensaje">Comentario:</label>
+        <textarea name="comen" id="mensaje"></textarea>
+
+        <br>
+
+        <button type="submit">ENVIAR MENSAJE</button>
+
+        <!-- <input type="submit" value="ENVIAR MENSAJE"> -->
+
+    </form>
+</main>
+
+
+<footer></footer>
+
+    
+</body>
+</html>
